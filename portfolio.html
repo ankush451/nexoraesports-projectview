@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View Nexora's past esports events and case studies. Filter by game, event type, and year.">
+    <title>Portfolio | Nexora Esports Production</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 10px 20px;
+            background: var(--off-white);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        .portfolio-item {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        .portfolio-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .portfolio-info {
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="Logo-01.png" alt="Nexora Logo" style="height: 40px;"></a>
+            <nav>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html" class="active">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="clients.html">Clients</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+            <i class="fas fa-bars mobile-toggle"></i>
+        </div>
+    </header>
+
+    <section class="section-padding" style="padding-top: 180px;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;" class="fade-in">
+                <span class="label">Our Portfolio</span>
+                <h2>Legendary Events Produced by Us</h2>
+            </div>
+
+            <div class="filter-container fade-in">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="moba">MOBA</button>
+                <button class="filter-btn" data-filter="fps">FPS</button>
+                <button class="filter-btn" data-filter="offline">Offline/LAN</button>
+                <button class="filter-btn" data-filter="online">Online</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item fade-in" data-category="moba">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Project 1" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <span class="label">MOBA / Offline</span>
+                        <h3>Pro League Finals 2025</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 10px 0;">Comprehensive production for the season finale in Paris.</p>
+                        <a href="#" style="font-weight: 600; color: var(--primary);">Case Study →</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-item fade-in" data-category="fps">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Project 2" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <span class="label">FPS / Online</span>
+                        <h3>Global Strike Series</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 10px 0;">Remote broadcast management for 6 regions simultaneously.</p>
+                        <a href="#" style="font-weight: 600; color: var(--primary);">Case Study →</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-item fade-in" data-category="offline">
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Project 3" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <span class="label">Multiple / Offline</span>
+                        <h3>Nexus Gaming Expo</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 10px 0;">On-site event operations and stage management for 3 days.</p>
+                        <a href="#" style="font-weight: 600; color: var(--primary);">Case Study →</a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="portfolio-item fade-in" data-category="fps">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Project 4" class="portfolio-img">
+                    <div class="portfolio-info">
+                        <span class="label">FPS / Offline</span>
+                        <h3>Arena Champions Cup</h3>
+                        <p style="color: var(--text-muted); font-size: 14px; margin: 10px 0;">Stadium-scale production with custom lighting integration.</p>
+                        <a href="#" style="font-weight: 600; color: var(--primary);">Case Study →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/yournumber" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo"><img src="Logo-01.png" alt="Nexora Logo" style="height: 40px;"></a>
+                    <p style="margin-top: 20px;">Redefining esports event production through innovation, precision, and passion.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nexora.esports" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nexoraesp/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/invite/sFNekmaMRe" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://youtube.com/@nexoraesportsofficial?si=t3sJNV_BNHIK1Z5q" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Our Work</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="blog.html">Blog & Insights</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Production</a></li>
+                        <li><a href="services.html">Management</a></li>
+                        <li><a href="services.html">Stage Design</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:nexoraesp@gmail.com">nexoraesp@gmail.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><a href="contact.html">Mumbai, India</a></li>
+                        <li><a href="contact.html">Bangalore, India</a></li>
+                        <li><a href="contact.html">Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexora Esports. Registered Production Company Based in India.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

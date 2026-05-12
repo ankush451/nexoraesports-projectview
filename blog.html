@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the latest insights, trends, and case studies in the esports production industry from the experts at Nexora.">
+    <title>Blog & Insights | Nexora Esports Production</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .blog-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+        .blog-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 25px;
+        }
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .badge {
+            background: var(--off-white);
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .newsletter-section {
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 80px 0;
+            margin-top: 80px;
+        }
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 30px auto 0;
+            gap: 10px;
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px;
+            border-radius: 4px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="Logo-01.png" alt="Nexora Logo" style="height: 40px;"></a>
+            <nav>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="clients.html">Clients</a>
+                    <a href="blog.html" class="active">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+            <i class="fas fa-bars mobile-toggle"></i>
+        </div>
+    </header>
+
+    <section class="section-padding" style="padding-top: 180px;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;" class="fade-in">
+                <span class="label">Industry Insights</span>
+                <h2>Latest from Our Experts</h2>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Article 1 -->
+                <div class="blog-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=800&q=80" alt="Blog 1" class="blog-img">
+                    <div class="blog-content">
+                        <span class="badge">Production</span>
+                        <h3 style="margin: 15px 0;">5 Trends Shaping Esports Broadcasting in 2026</h3>
+                        <p style="color: var(--text-muted); font-size: 14px;">Discover how AI and AR are revolutionizing the way we watch competitive gaming.</p>
+                        <div class="blog-meta">
+                            <span>May 10, 2026</span>
+                            <span>6 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="blog-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1472457897821-70d3819a0e24?auto=format&fit=crop&w=800&q=80" alt="Blog 2" class="blog-img">
+                    <div class="blog-content">
+                        <span class="badge">Management</span>
+                        <h3 style="margin: 15px 0;">Running a Global Tournament: A Behind-the-Scenes Look</h3>
+                        <p style="color: var(--text-muted); font-size: 14px;">A deep dive into the logistics of managing cross-border esports events.</p>
+                        <div class="blog-meta">
+                            <span>May 05, 2026</span>
+                            <span>12 min read</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article 3 -->
+                <div class="blog-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Blog 3" class="blog-img">
+                    <div class="blog-content">
+                        <span class="badge">Technical</span>
+                        <h3 style="margin: 15px 0;">Optimizing Latency for Remote Production</h3>
+                        <p style="color: var(--text-muted); font-size: 14px;">Technical strategies for maintaining zero-delay broadcasts from home studios.</p>
+                        <div class="blog-meta">
+                            <span>April 28, 2026</span>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container fade-in">
+            <span class="label" style="color: rgba(255,255,255,0.8);">Stay Updated</span>
+            <h2 style="color: white;">Subscribe to Our Newsletter</h2>
+            <p style="max-width: 500px; margin: 15px auto; opacity: 0.8;">Get the latest industry news and production tips delivered to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn" style="background: white; color: var(--primary);">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/yournumber" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo"><img src="Logo-01.png" alt="Nexora Logo" style="height: 40px;"></a>
+                    <p style="margin-top: 20px;">Redefining esports event production through innovation, precision, and passion.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nexora.esports" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nexoraesp/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/invite/sFNekmaMRe" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://youtube.com/@nexoraesportsofficial?si=t3sJNV_BNHIK1Z5q" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Our Work</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="blog.html">Blog & Insights</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Production</a></li>
+                        <li><a href="services.html">Management</a></li>
+                        <li><a href="services.html">Stage Design</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:nexoraesp@gmail.com">nexoraesp@gmail.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><a href="contact.html">Mumbai, India</a></li>
+                        <li><a href="contact.html">Bangalore, India</a></li>
+                        <li><a href="contact.html">Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexora Esports. Registered Production Company Based in India.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

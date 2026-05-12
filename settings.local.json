@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:\\\\Users\\\\SHUVO\\\\Downloads\\\\nexora\\\\images\\\\scroll-frames\")",
+      "Bash(cp \"c:/Users/SHUVO/Downloads/ezgif-5d4ba99837bee529-jpg/\"*.jpg \"c:/Users/SHUVO/Downloads/nexora/images/scroll-frames/\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\SHUVO\\Downloads\\nexora\\images",
+      "c:\\Users\\SHUVO\\Downloads\\ezgif-5d4ba99837bee529-jpg"
+    ]
+  }
+}

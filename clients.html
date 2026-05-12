@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Nexora's global partners and clients. Read testimonials from industry leaders in esports and gaming.">
+    <title>Clients & Partners | Nexora Esports Production</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+        .logo-item img {
+            max-width: 120px;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: var(--transition);
+        }
+        .logo-item:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+        .logo-item:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        .testimonial-card {
+            padding: 40px;
+            background: var(--off-white);
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .client-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .client-meta img {
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><img src="Logo-01.png" alt="Nexora Logo" style="height: 40px;"></a>
+            <nav>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="clients.html" class="active">Clients</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+            <i class="fas fa-bars mobile-toggle"></i>
+        </div>
+    </header>
+
+    <section class="section-padding" style="padding-top: 180px;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;" class="fade-in">
+                <span class="label">Our Partners</span>
+                <h2>Trusted by Global Industry Leaders</h2>
+                <p style="max-width: 600px; margin: 20px auto; color: var(--text-muted);">
+                    We collaborate with the world's most ambitious brands and game publishers to deliver exceptional competitive experiences.
+                </p>
+            </div>
+
+            <div class="logo-grid">
+                <div class="logo-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Logitech_logo.svg/1200px-Logitech_logo.svg.png" alt="Logitech">
+                </div>
+                <div class="logo-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" alt="Samsung">
+                </div>
+                <div class="logo-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/2560px-Coca-Cola_logo.svg.png" alt="Coca Cola">
+                </div>
+                <div class="logo-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" alt="Marvel">
+                </div>
+                <div class="logo-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" alt="Netflix">
+                </div>
+                <div class="logo-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Intel_logo_%282020%2C_blue%29.svg/2560px-Intel_logo_%282020%2C_blue%29.svg.png" alt="Intel">
+                </div>
+                <div class="logo-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="Amazon">
+                </div>
+                <div class="logo-item fade-in">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt="Google">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;" class="fade-in">
+                <span class="label">Testimonials</span>
+                <h2>What Our Clients Say</h2>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
+                <div class="testimonial-card fade-in">
+                    <p style="font-size: 18px; line-height: 1.6; font-style: italic;">
+                        "Nexora transformed our seasonal league from a simple online tournament into a professional-grade broadcast that rivaled television standards. Their attention to detail is unmatched."
+                    </p>
+                    <div class="client-meta">
+                        <img src="https://i.pravatar.cc/100?u=10" alt="Client 1">
+                        <div>
+                            <h4 style="margin: 0;">Thomas Wright</h4>
+                            <p class="label" style="margin: 0; font-size: 11px;">Esports Manager, Global Gaming</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p style="font-size: 18px; line-height: 1.6; font-style: italic;">
+                        "Working with Nexora on our stadium finals in Berlin was a seamless experience. They handled everything from the complex technical rigging to the on-site team management flawlessly."
+                    </p>
+                    <div class="client-meta">
+                        <img src="https://i.pravatar.cc/100?u=11" alt="Client 2">
+                        <div>
+                            <h4 style="margin: 0;">Sophia Martinez</h4>
+                            <p class="label" style="margin: 0; font-size: 11px;">Director of Events, Pixel Arena</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/yournumber" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo"><img src="Logo-01.png" alt="Nexora Logo" style="height: 40px;"></a>
+                    <p style="margin-top: 20px;">Redefining esports event production through innovation, precision, and passion.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/nexora.esports" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nexoraesp/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://discord.com/invite/sFNekmaMRe" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://youtube.com/@nexoraesportsofficial?si=t3sJNV_BNHIK1Z5q" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Our Work</a></li>
+                        <li><a href="clients.html">Clients</a></li>
+                        <li><a href="blog.html">Blog & Insights</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Production</a></li>
+                        <li><a href="services.html">Management</a></li>
+                        <li><a href="services.html">Stage Design</a></li>
+                        <li><a href="services.html">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:nexoraesp@gmail.com">nexoraesp@gmail.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><a href="contact.html">Mumbai, India</a></li>
+                        <li><a href="contact.html">Bangalore, India</a></li>
+                        <li><a href="contact.html">Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexora Esports. Registered Production Company Based in India.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
